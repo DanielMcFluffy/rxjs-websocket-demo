@@ -2,7 +2,8 @@ const {webSocket} = rxjs.webSocket;
 const {tap, map} = rxjs.operators;
 
 const subject = webSocket({
-    url: 'ws://localhost:8000',
+    // url: 'ws://localhost:8000',
+    url: 'https://rxjs-websocket-demo.onrender.com',
     deserializer: msg => msg
 });
 
